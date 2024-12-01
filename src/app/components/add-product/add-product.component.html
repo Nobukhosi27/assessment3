@@ -1,0 +1,24 @@
+<div class="add-product">
+
+    <h3>Add New Product</h3>
+
+    <form (ngSumbit)="addProduct()" class="products">
+
+
+
+<input [(ngModel)]="title" type="text" class="form-input" placeholder="Enter product title" name="title"/>
+<input [(ngModel)]="price" type="text" class="form-input" placeholder="Enter product price" name="price"/>
+<textarea [(ngModel)]="description"  type="text" class="form-input" placeholder="Enter product description" name="description" ></textarea>
+<input [(ngModel)]="category" type="text" class="form-input" placeholder="Enter product category" name="category"/>
+<input [(ngModel)]="image" type="text" class="form-input" placeholder="Enter product imageUrl" name="image"/>
+
+
+<div>
+    
+<button type="submit"> Add Product</button>
+
+</div>
+
+    </form>
+
+</div>

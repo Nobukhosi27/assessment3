@@ -1,0 +1,27 @@
+<div style="width: 100vw;">
+
+    <h3>User</h3>
+    <p>All products by user {{userProduct}}</p>
+
+
+    <div *ngFor="let product of userProduct">
+
+        <h1>{{product.title}}</h1>
+        <p>{{product.price}}</p>
+        <p>{{product.description}}</p>
+
+
+        <div class="product-ratings">
+            <p><strong>Ratings</strong>{{product.rating}}</p>
+            <p>{{product.rating.rate}}</p>
+            <p>{{product.rating.count}}</p>
+    
+
+    </div>
+
+   
+
+    </div>
+
+
+

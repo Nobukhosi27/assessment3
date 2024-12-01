@@ -1,0 +1,21 @@
+<nav class="nav">
+
+    <span>E-COMMERCE</span>
+
+    <div *ngIf="currentUser">
+        <span *ngIf="currentUser" >Welcome , {{currentUser}}</span>
+    </div>
+    <ul>
+
+        <li><a routerLink="product">Product</a></li>
+        <li><a routerLink="add-product">Add-Product</a></li>
+        <li><a routerLink="user" >User</a></li>
+        <li><a routerLink="logout">Logout</a></li>
+        
+        
+        </ul>
+        
+        
+        
+        
+</nav>
